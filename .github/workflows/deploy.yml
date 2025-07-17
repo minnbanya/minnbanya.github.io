@@ -27,8 +27,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      # Copy built files to the GitHub Pages deploy directory
-      - name: Deploy to GitHub Pages
+      # Deploy to GitHub Pages
+      - name: Deploy
         run: |
           rm -rf ./node_modules
           mv dist/* .  # Move build files to root
@@ -37,4 +37,4 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add -A
           git commit -m "deploy: build and deploy to GitHub Pages" || echo "No changes to commit"
-          git push origin main
+          git push https://x-access-token:${{ secrets.PORTFOLIO_PAT }}@github.com/minnbanya/minnbanya.github.io.git main
