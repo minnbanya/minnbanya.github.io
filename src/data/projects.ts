@@ -19,7 +19,7 @@ export const projects: Project[] = [
     title: 'Smart Summarizer API',
     description: 'An end-to-end machine learning system for document summarization.',
     longDescription: 'End-to-end ML system for document summarization. Includes fine-tuning, REST API, CLI binary, Dockerized deployment, and CI/CD pipeline.',
-    image: '/api/placeholder/600/400',
+    image: '/smart-summarizer.png',
     techStack: ['Python', 'PyTorch', 'Transformers', 'CUDA', 'Docker'],
     tags: [],
     githubUrl: 'https://github.com/minnbanya/smart-summarizer',
