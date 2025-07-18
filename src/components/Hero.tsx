@@ -23,7 +23,7 @@ const Hero = () => {
           <h1 className="text-3xl md:text-4xl font-medium mb-4 text-muted-foreground">
             Minn Banya
           </h1>
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-relaxed py-2">
             AI Engineer
           </h2>
           <h3 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-medium">
